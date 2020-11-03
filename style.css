@@ -1,37 +1,93 @@
 body{
-	background-color: ivory;
-	text-align: center;
-	font-family: "Lucida Sans";
-	font-size: large;
+	background-color: black;
+	font-family: 'Gabriela', serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
-.mi, .mi2{
-	list-style: none;
-	border-left: 10px solid #fc7574;
-	padding: 0;
-	font-family: "Lucida Sans";
+.d1{
+	position: absolute;
+	left: 3.5%;
+	top: 250px;
+	width: 30%;
 	text-align: left;
-	width: 40%;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: 30%;
+	padding: 40px;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
 }
-.mi2{
-	text-align: right;
-	letter-spacing: 2pt;
-	line-height: 20pt;
+.d2{
+	margin: 50px;
+	overflow: hidden;
+	width: 70%;
 }
-.mi{
-	letter-spacing: 1pt;
-	line-height: 12pt;
+.d3{
+	margin: 10px;
+	width: 45%;
 }
-.mi li, .mi2 li{
-	padding: 10px;
+img{
+	object-fit: cover;
 }
-.mi li:nth-child(odd), .mi2 li:nth-child(even){
-	background: #e1f1ff;
+@media all and (max-width: 1200px){
+body{
+	flex-direction: column;
 }
-.mi li:nth-child(even), .mi2 li:nth-child(odd){
-	background: wheat;
+.d1{
+	top: 225px;
+	left: 5%;
+}
+.d2{
+	width: 80%;
+	height: 600px;
+	margin: 5% auto;
+}
+.d3{
+	width: 90%;
+	margin: auto;
+}
+}
+@media all and (max-width: 900px){
+	body{
+		flex-direction: column;
+	}
+	.d1{
+		top: 200px;
+left: 6%;
+width: 30%;
+font-size: 14px;
+	}
+	.d2{
+		width: 80%;
+		height: 450px;
+		margin: 5% auto;
+		
+	}
+	.d3{
+		width: 90%;
+		margin: auto;
+		height: 450px;
+	}
+	}
+@media all and (max-width: 600px){
+	body{
+		flex-direction: column;
+	}
+	.d1{
+		top: 150px;
+left: 6%;
+width: 30%;
+font-size: 14px;
+	}
+	.d2{
+		margin: 5% auto;
+		width: 80%;
+		height: 300px;
+	}
+	.d3{
+		margin: auto;
+		width: 90%;
+		height: 300px;
+	}
 }
 a {
 	text-decoration: none;
